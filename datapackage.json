@@ -2,7 +2,7 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "umfragen",
+      "name": "aktivitaetsumfragen",
       "path": "data/aktivitaetsumfragen.csv",
       "profile": "tabular-data-resource",
       "schema": {
@@ -56,6 +56,6 @@
       }
     }
   ],
-  "name": "koerperlicheAktivitaet",
-  "title": "Umfragen körperliche Aktivität"
+  "name": "aktivitaetsumfragen",
+  "title": "aktivitaetsumfragen"
 }

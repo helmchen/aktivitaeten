@@ -1,32 +1,61 @@
 {
-  "name": "datapackage-boilerplate",
-  "title": "A Boilerplate Data Package",
-  "format": "csv",
-  "datapackage_version": "1.0.0",
-  "last_modified": "2018-01-01",
-  "licenses": [{
-    "name": "ODC-PDDL-1.0",
-    "path": "http://opendatacommons.org/licenses/pddl/",
-    "title": "Open Data Commons Public Domain Dedication and License v1.0"
-  }],
-  "sources": [
-    {
-      "name": "Sample Data Source",
-      "web": "http://www..."
-    }
-  ],
+  "profile": "tabular-data-package",
   "resources": [
     {
-      "path": "data/some-good-data.csv",
+      "name": "umfragen",
+      "path": "data/aktivitaetsumfragen.csv",
+      "profile": "tabular-data-resource",
       "schema": {
-        "fields": []
+        "fields": [
+          {
+            "name": "Jahr",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Geschlecht",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Altersgruppe",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Anteil_Trainiert",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Anteil_aktiv",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Anteil_teilaktiv",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Anteil_inaktiv",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "Stichprobengroesse",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Hochrechnung_Gesamtbevoelkerung",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
       }
-    },{
-      "path": "data/the-raw-data.xls"
     }
   ],
-  "maintainers":[{
-    "name": "School of Data CH",
-    "web": "https://www.schoolofdata.ch/"
-  }]
+  "name": "körperliche_Aktivität",
+  "title": "Umfragen körperliche Aktivität"
 }
